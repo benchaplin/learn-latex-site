@@ -1,0 +1,23 @@
+h2 {
+  padding: 1%;
+}
+
+.general {
+  font-family: "CMUSerifRoman";
+}
+
+.container {
+  text-align: center;
+}
+
+.tex {
+  vertical-align: text-top;
+  line-height: 3;
+  font-size: 20px;
+}
+
+.form-control:focus {
+  border-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
