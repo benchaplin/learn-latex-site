@@ -3,11 +3,11 @@ import "../index.css";
 import InputBox from "./InputBox";
 import CompiledBox from "./CompiledBox";
 
-function TypesetEx() {
+function TypesetEx(props) {
   return (
     <div className="row">
       <div className="container-fluid col-sm-7">
-        <InputBox />
+        <InputBox prompt={props.lesson.prompt}/>
       </div>
       <div className="col-sm-5">
         <CompiledBox />

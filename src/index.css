@@ -7,13 +7,21 @@ h2 {
 }
 
 .container {
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 .tex {
+  border: 1px show;
   vertical-align: text-top;
   line-height: 3;
   font-size: 20px;
+  text-align: center;
 }
 
 .form-control:focus {

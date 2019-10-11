@@ -10,8 +10,11 @@ function Footer() {
             width="30"
             alt="git"
           ></img>{" "}
-          <a href="https://github.com/benchaplin" style={{ color: "black" }}>
-            https://github.com/benchaplin
+          <a
+            href="https://github.com/benchaplin/learn_latex_site"
+            style={{ color: "black" }}
+          >
+            https://github.com/benchaplin/learn_latex_site
           </a>{" "}
         </p>
       </div>

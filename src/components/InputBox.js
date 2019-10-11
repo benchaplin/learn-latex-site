@@ -1,9 +1,11 @@
 import React from "react";
 
-function InputBox() {
-    return (
-        <textarea class="form-control" id="comment">$\sum_&#123;k=0&#125;^n$</textarea>
-    )
+function InputBox(props) {
+  return (
+    <textarea class="form-control" id="comment">
+      {props.prompt}
+    </textarea>
+  );
 }
 
 export default InputBox;
