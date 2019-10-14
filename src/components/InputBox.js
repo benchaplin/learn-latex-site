@@ -5,9 +5,11 @@ function InputBox(props) {
     <textarea
       className="form-control"
       id="comment"
+      rows="3"
+      spellCheck="false"
+      value={props.text}
       onChange={props.handleChange}
     >
-      {props.text}
     </textarea>
   );
 }

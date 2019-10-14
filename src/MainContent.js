@@ -18,7 +18,8 @@ const lesson2 = {
   explanation2:
     "Use \\displaystyle\\sum to create a larger sum (this is most commonly used).",
   prompt: "\\sum_{k=0}^n",
-  test: "(x+y)^n = \\displaystyle\\sum_{k=0}^n \\binom{n}{k}x^{n}y^{n-k}"
+  test: "(x+y)^n = \\displaystyle\\sum_{k=0}^n \\binom{n}{k}x^{n}y^{n-k}", 
+  hint: "Use \\displaystyle\\sum"
 };
 
 function MainContent() {

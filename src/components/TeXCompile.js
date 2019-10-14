@@ -12,9 +12,13 @@ function TeXCompile(props) {
 
   return (
     <>
-      <div className="row" style={{paddingBottom: 16}}>
-        <div className="container-fluid col-sm-7">
-          <InputBox text={text} handleChange={handleChange} defVal={props.prompt} />
+      <div className="row">
+        <div className="container-fluid col-sm-7" style={{marginBottom: 10}}>
+          <InputBox
+            text={text}
+            handleChange={handleChange}
+            defVal={props.prompt}
+          />
         </div>
         <div className="col-sm-5">
           <CompiledBox text={text} />
