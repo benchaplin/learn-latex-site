@@ -17,11 +17,8 @@ h2 {
 }
 
 .tex {
-  border: 1px show;
-  vertical-align: text-top;
-  line-height: 3;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .form-control:focus {

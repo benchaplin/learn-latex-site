@@ -1,7 +1,8 @@
 import React from "react";
 import Explanation from "./Explanation";
-import TypesetEx from "./TypesetEx";
-import Test from "./Test";
+import TeXCompile from "./TeXCompile";
+import { InlineMath } from "react-katex";
+import "katex/dist/katex.min.css";
 
 function WholeTutorial(props) {
   return (
@@ -16,14 +17,21 @@ function WholeTutorial(props) {
           <Explanation lesson={props.lesson} />
         </div>
         <div className="col-sm-6">
-          <p><b>Try it out!</b></p>
-          <TypesetEx lesson={props.lesson} />
+          <p>
+            <b>Try it out!</b>
+          </p>
+          <TeXCompile prompt={props.lesson.prompt} />
         </div>
       </div>
       <hr />
       <div style={{ paddingTop: "2%" }}>
-        <Test lesson={props.lesson} />
+        <p>
+          TeX up the following to move on: &#160;
+          <InlineMath math={props.lesson.test} />
+        </p>
+        <TeXCompile prompt=" " />
       </div>
+      <hr />
     </div>
   );
 }

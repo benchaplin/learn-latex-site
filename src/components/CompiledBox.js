@@ -1,11 +1,13 @@
 import React from "react";
 import { InlineMath } from "react-katex";
-import 'katex/dist/katex.min.css';
+import "katex/dist/katex.min.css";
 
-function CompiledBox() {
-    return (
-        <p className="tex"><InlineMath math="\sum_&#123;k=0&#125;^n"/></p>
-    )
+function CompiledBox(props) {
+  return (
+    <p className="tex">
+      <InlineMath math={props.text} />
+    </p>
+  );
 }
 
 export default CompiledBox;

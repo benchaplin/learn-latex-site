@@ -2,19 +2,19 @@ import React from "react";
 
 function Nav() {
   return (
-    <ul class="nav flex-column">
-      <li class="nav-item">
+    <ul className="nav flex-column">
+      <li className="nav-item">
         <a
-          class="nav-link"
+          className="nav-link"
           style={{ color: "black" }}
           href="/MainContent"
         >
           Lesson 1: Fractions
         </a>
       </li>
-      <li class="nav-item">
+      <li className="nav-item">
         <a
-          class="nav-link"
+          className="nav-link"
           style={{ color: "black" }}
           href="/MainContent"
         >

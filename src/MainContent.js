@@ -17,7 +17,7 @@ const lesson2 = {
     "To use summation notation in TeX, use the \\sum command. Input expressions below or above the summation using the _ and ^ characters respectively.",
   explanation2:
     "Use \\displaystyle\\sum to create a larger sum (this is most commonly used).",
-  prompt: "$\\sum_{k=0}^n$",
+  prompt: "\\sum_{k=0}^n",
   test: "(x+y)^n = \\displaystyle\\sum_{k=0}^n \\binom{n}{k}x^{n}y^{n-k}"
 };
 

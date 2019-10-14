@@ -2,8 +2,12 @@ import React from "react";
 
 function InputBox(props) {
   return (
-    <textarea class="form-control" id="comment">
-      {props.prompt}
+    <textarea
+      className="form-control"
+      id="comment"
+      onChange={props.handleChange}
+    >
+      {props.text}
     </textarea>
   );
 }
