@@ -2,7 +2,7 @@ import React from "react";
 import Explanation from "./Explanation";
 import TeXCompile from "./TeXCompile";
 import ReactTooltip from "react-tooltip";
-import { InlineMath } from "react-katex";
+import { BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
 
 function WholeTutorial(props) {
@@ -22,31 +22,41 @@ function WholeTutorial(props) {
             <p>
               <b>Try it out!</b>
             </p>
-            <TeXCompile prompt={props.lesson.prompt} />
+            <TeXCompile prompt={props.lesson.prompt} lesson="zzz" />
           </div>
         </div>
       </div>
       <hr />
       <div className="subcontainer">
         <div className="row">
-          <div className="col-sm-10">
-            <p>
-              TeX up the following to move on: &#160;
-              <InlineMath math={props.lesson.test} />
-            </p>
+          <div className="col-sm-3">
+            <p>TeX up the following to move on: &#160;</p>
           </div>
-          <div className="col-sm-2">
+          <div className="col-sm-3">
+            <BlockMath math={props.lesson.test} />
+          </div>
+          <div className="col-sm-3" />
+          <div className="col-sm-1">
             <button
               className="btn btn-outline-dark"
               data-tip={props.lesson.hint}
-              style={{marginBottom: 10}}
+              style={{ marginBottom: 10 }}
             >
               Hint
             </button>
-            <ReactTooltip place="left" type="dark" effect="solid" />
           </div>
+          <div className="col-sm-1">
+            <button
+              className="btn btn-outline-dark"
+              data-tip={props.lesson.test}
+              style={{ marginBottom: 10 }}
+            >
+              Answer
+            </button>
+          </div>
+          <ReactTooltip place="left" type="dark" effect="solid" />
         </div>
-        <TeXCompile prompt=" " />
+        <TeXCompile prompt=" " test={props.lesson.test} />
       </div>
     </div>
   );

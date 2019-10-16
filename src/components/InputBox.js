@@ -1,6 +1,10 @@
 import React from "react";
 
 function InputBox(props) {
+  function fixSpace() {
+    props.setText("");
+  }
+
   return (
     <textarea
       className="form-control"
@@ -8,6 +12,7 @@ function InputBox(props) {
       rows="3"
       spellCheck="false"
       value={props.text}
+      onClick={fixSpace}
       onChange={props.handleChange}
     >
     </textarea>
