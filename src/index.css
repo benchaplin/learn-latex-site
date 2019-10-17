@@ -1,5 +1,6 @@
 h2 {
-  padding: 1%;
+  margin: 10px;
+  margin-left: 25px;
 }
 
 h3 {
@@ -9,6 +10,11 @@ h3 {
 
 body {
   padding-bottom: 70px;
+}
+
+.link {
+  color: black !important;
+  text-decoration: none !important;
 }
 
 .footer {
@@ -35,8 +41,10 @@ body {
 }
 
 .subcontainer {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   vertical-align: top;
 }
 

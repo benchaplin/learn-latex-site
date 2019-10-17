@@ -17,7 +17,7 @@ function TeXCompile(props) {
 
   return (
     <>
-      <div className="row">
+      <div className="row" style={{marginTop: "15px"}}>
         <div className="container-fluid col-sm-7" style={{ marginBottom: 10 }}>
           <InputBox text={text} handleChange={handleChange} setText={setText} />
         </div>
@@ -29,7 +29,7 @@ function TeXCompile(props) {
         {completed ? (
           <button className="btn btn-success">
             <a href="/fracs" style={{ color: "white" }}>
-              Move on
+              Next
             </a>
           </button>
         ) : (
