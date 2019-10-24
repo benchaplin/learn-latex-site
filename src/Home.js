@@ -7,7 +7,7 @@ const homeEx = {
 
 function Home(props) {
   return (
-    <div className="subcontainer">
+    <div className="container">
       <div className="row">
         <h3>
           What is
@@ -22,7 +22,7 @@ function Home(props) {
       </div>
 
       <div className="row">
-        <div className="col-sm-9">
+        <div className="col-sm-10">
           <p>
             <img
               src="https://i.stack.imgur.com/zHFFO.png"
@@ -52,14 +52,14 @@ function Home(props) {
             allows users to type up mathematics for a professional presentation.
           </p>
         </div>
-        <div className="col-sm-3"></div>
+        <div className="col-sm-2"></div>
       </div>
 
       <div className="row">
         <h3 style={{ paddingTop: "20px" }}>How do I use it?</h3>
       </div>
       <div className="row">
-        <div className="col-sm-9">
+        <div className="col-sm-10">
           <p>
             This website offers a basic TeX compiler to help you get started
             learning basic mathematical formatting. To work in a full document
@@ -84,7 +84,7 @@ function Home(props) {
             math in TeX.
           </p>
         </div>
-        <div className="col-sm-3"></div>
+        <div className="col-sm-2"></div>
       </div>
 
       <div className="row">

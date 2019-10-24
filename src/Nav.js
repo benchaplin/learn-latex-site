@@ -9,39 +9,38 @@ function Nav() {
             <u>Basic Commands</u>
           </b>
         </p>
-        <ol>
-          <li className="nostyle">
+        <ol type="I">
+          <li>
             <a className="nav-link" style={{ color: "black" }} href="/exps">
               Exponents
-              
             </a>
           </li>
-          <li className="nostyle">
+          <li>
             <a className="nav-link" style={{ color: "black" }} href="/subs">
               Subscripts
             </a>
           </li>
-          <li className="nostyle">
+          <li>
             <a className="nav-link" style={{ color: "black" }} href="/sqrts">
               Square Roots
             </a>
           </li>
-          <li className="nostyle">
+          <li>
             <a className="nav-link" style={{ color: "black" }} href="/fracs">
               Fractions
             </a>
           </li>
-          <li className="nostyle">
+          <li>
             <a className="nav-link" style={{ color: "black" }} href="/binoms">
               Binomial Coefficients
             </a>
           </li>
-          <li className="nostyle">
+          <li>
             <a className="nav-link" style={{ color: "black" }} href="/sums">
               Sums
             </a>
           </li>
-          <li className="nostyle">
+          <li>
             <a className="nav-link" style={{ color: "black" }} href="/ints">
               Integrals
             </a>
