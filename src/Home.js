@@ -2,8 +2,7 @@ import React from "react";
 import TexCompile from "./components/TeXCompile";
 
 const homeEx = {
-  prompt:
-    "\\sum_{n = 0}^\\infty q(n)x^n = \\prod_{k = 1}^\\infty (1 + x^k) = \\prod_{k = 1}^\\infty \\frac{1}{1 - x^{2k - 1}}"
+  prompt: "\\sum_{n = 0}^\\infty q(n)x^n = \\prod_{k = 1}^\\infty (1 + x^k)"
 };
 
 function Home(props) {
@@ -31,7 +30,7 @@ function Home(props) {
               style={{ pointerEvents: "none" }}
               alt="logo"
             ></img>
-            is a typesetting system used in many technical academic fields. The
+            is a typesetting system used in technical academic fields. The
             system takes your input and formats it to display equations,
             graphics and document layouts.
           </p>
@@ -57,7 +56,7 @@ function Home(props) {
       </div>
 
       <div className="row">
-        <h3 style={{ paddingTop: "20px" }}>How do I use it&thinsp;?</h3>
+        <h3 style={{ paddingTop: "20px" }}>How do I use it?</h3>
       </div>
       <div className="row">
         <div className="col-sm-9">
@@ -73,7 +72,7 @@ function Home(props) {
             , an easy-to-use TeX editor with great templates for beginners.
           </p>
           <p>
-            Use this website to aid your{" "}
+            Use this website to aid your
             <img
               src="https://i.stack.imgur.com/zHFFO.png"
               width="50"
@@ -96,6 +95,11 @@ function Home(props) {
           <TexCompile prompt={homeEx.prompt} test={homeEx.prompt} />
         </div>
       </div>
+      <button className="btn btn-success">
+        <a href="\exps" style={{ color: "white" }}>
+          Begin
+        </a>
+      </button>
     </div>
   );
 }

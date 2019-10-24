@@ -22,7 +22,11 @@ function WholeTutorial(props) {
             <p>
               <b>Try it out!</b>
             </p>
-            <TeXCompile prompt={props.lesson.prompt} lesson="zzz" />
+            <TeXCompile
+              prompt={props.lesson.prompt}
+              lesson={props.lesson}
+              comparable={false}
+            />
           </div>
         </div>
       </div>
@@ -56,7 +60,7 @@ function WholeTutorial(props) {
           </div>
           <ReactTooltip place="left" type="dark" effect="solid" />
         </div>
-        <TeXCompile prompt=" " test={props.lesson.test} />
+        <TeXCompile prompt=" " lesson={props.lesson} comparable={true} />
       </div>
     </div>
   );

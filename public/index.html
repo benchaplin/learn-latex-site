@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Learn LaTeX</title>
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
@@ -16,9 +17,33 @@
       src="https://kit.fontawesome.com/0244dd3e65.js"
       crossorigin="anonymous"
     ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div id="root"></div>
     <script src="../src/index.pack.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDJOwJjrKSyWplZOkuo2e166XmQSnwTZHc",
+        authDomain: "learn-latex.firebaseapp.com",
+        databaseURL: "https://learn-latex.firebaseio.com",
+        projectId: "learn-latex",
+        storageBucket: "learn-latex.appspot.com",
+        messagingSenderId: "250148548799",
+        appId: "1:250148548799:web:658917d8464f00d5be560a",
+        measurementId: "G-9ZBHHWXTBV"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
