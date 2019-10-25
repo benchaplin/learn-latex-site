@@ -17,3 +17,9 @@ Styling is aided by Bootstrap 4 and Fontawesome.
 ## Contribute
 
 If you have an idea for a lesson, feel free to edit learn_latex_site/src/lessons/lessons.js and submit a pull request. Make sure the new lesson object is created with the same properties as the existing ones.
+
+<b>Desired functionality:</b>
+<ul>
+  <li>Must wrap TeX in '$' to signify math mode, else prints string</li>
+  <li>Multi-line lesson set: teach environments (equation vs. inline, align, def/lemma/thm/cor etc.)</li>
+</ul>
