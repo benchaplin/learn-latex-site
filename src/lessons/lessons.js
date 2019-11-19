@@ -16,7 +16,7 @@ const lessons = [
     explanation2:
       "If the subscript has more than one character, wrap it in curly brackets.",
     prompt: "X_1 + X_2 + ... + X_n",
-    test: "a^nx^n + a^{n - 1}x^{n - 1} + ... + a_1x + a_0 = 0",
+    test: "a_nx_n + a_{n - 1}x^{n - 1} + ... + a_1x + a_0 = 0",
     hint: "Wrap multiple-character subscripts in {}."
   },
   {
