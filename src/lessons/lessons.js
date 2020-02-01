@@ -16,7 +16,7 @@ const lessons = [
     explanation2:
       "If the subscript has more than one character, wrap it in curly brackets.",
     prompt: "X_1 + X_2 + ... + X_n",
-    test: "a_nx_n + a_{n - 1}x^{n - 1} + ... + a_1x + a_0 = 0",
+    test: "a_nx_n + a_{n - 1}x^{n - 1} + \\ldots + a_1x + a_0 = 0",
     hint: "Wrap multiple-character subscripts in {}."
   },
   {
@@ -35,7 +35,8 @@ const lessons = [
     explanation2:
       "Always input the numerator and denominator in curly brackets.",
     prompt: "-\\frac{1}{12}",
-    test: "f(a) + \\frac{f'(a)}{1!}(x - a) + \\frac{f''(a)}{2!}(x - a)^2 + ...",
+    test:
+      "f(a) + \\frac{f'(a)}{1!}(x - a) + \\frac{f''(a)}{2!}(x - a)^2 + \\ldots",
     hint: "Wrap multiple-character numerators/denominators in {}."
   },
   {
@@ -48,6 +49,18 @@ const lessons = [
     prompt: "\\binom{52}{4}",
     test:
       "\\binom{n + 1}{k + 1} = \\frac{n!}{(n - k)!k!} + \\frac{n!}{(n - k - 1)!(k + 1)!}",
+    hint: "Recall \\frac."
+  },
+  {
+    title: "Logarithms",
+    path: "/logs",
+    explanation1:
+      "To write a logarithm in TeX, use the \\log (or \\ln) command. Input the base using the _ character afterwards.",
+    explanation2:
+      "If base has more than one character, wrap it in curly brackets.",
+    prompt: "\\log_2 xy^2",
+    test:
+      "\\frac{1}{\\log_2 x} + \\frac{1}{\\log_3 x} + \\frac{1}{\\log_4 x} = 1",
     hint: "Recall \\frac."
   },
   {

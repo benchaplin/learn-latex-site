@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../index.css";
+import { Link } from "react-router-dom";
 import InputBox from "./InputBox";
 import CompiledBox from "./CompiledBox";
 import { lessonList } from "../lessons/lessons";
@@ -18,6 +18,12 @@ function TeXCompile(props) {
     setText(event.target.value);
   };
 
+  // Force reset
+  const handleNext = () => {
+    setText(" ");
+    setCompleted(false);
+  };
+
   const nextPath =
     lessonList().indexOf(props.lesson) < lessonList().length - 1
       ? lessonList()[lessonList().indexOf(props.lesson) + 1].path
@@ -25,21 +31,24 @@ function TeXCompile(props) {
 
   return (
     <>
-      <div className="row" style={{ marginTop: "15px" }}>
-        <div className="container-fluid col-sm-7" style={{ marginBottom: 10 }}>
+      <div className="row" style={{ marginTop: 15, marginRight: 10 }}>
+        <div
+          className="container-fluid col-md-6 col-lg-7"
+          style={{ marginBottom: 10 }}
+        >
           <InputBox text={text} handleChange={handleChange} setText={setText} />
         </div>
-        <div className="col-sm-5">
+        <div className="col-md-6 col-lg-5">
           <CompiledBox text={text} />
         </div>
       </div>
       <div>
         {completed ? (
-          <button className="btn btn-success">
-            <a href={nextPath} style={{ color: "white" }}>
+          <Link to={nextPath}>
+            <button onClick={handleNext} className="btn btn-success">
               Next
-            </a>
-          </button>
+            </button>
+          </Link>
         ) : (
           <></>
         )}
@@ -49,23 +58,24 @@ function TeXCompile(props) {
 }
 
 // Returns input string without spaces and curly brackets containing one non-space character
+// Consider "..." equivalent to "\ldots"
 function formatTeX(str) {
-  const new_str = str.replace(/ /g, "");
-  let newer_str = new_str;
+  let new_str = str.replace(/ /g, "");
+  new_str = new_str.replace(/\\ldots/g, "...");
 
   let i = 0;
-  while (i < newer_str.length) {
-    if (newer_str.charAt(i) === "}") {
-      if (newer_str.charAt(i - 2) === "{") {
-        newer_str =
-          newer_str.slice(0, i - 2) +
-          newer_str.slice(i - 1, i) +
-          newer_str.slice(i + 1);
+  while (i < new_str.length) {
+    if (new_str.charAt(i) === "}") {
+      if (new_str.charAt(i - 2) === "{") {
+        new_str =
+          new_str.slice(0, i - 2) +
+          new_str.slice(i - 1, i) +
+          new_str.slice(i + 1);
       }
     }
     i = i + 1;
   }
-  return newer_str;
+  return new_str;
 }
 
 export default TeXCompile;

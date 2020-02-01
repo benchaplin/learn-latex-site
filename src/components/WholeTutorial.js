@@ -15,10 +15,10 @@ function WholeTutorial(props) {
           </h3>
         </div>
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-md-12 col-lg-6">
             <Explanation lesson={props.lesson} />
           </div>
-          <div className="col-sm-6">
+          <div className="col-md-12 col-lg-6">
             <p>
               <b>Try it out!</b>
             </p>
@@ -33,14 +33,14 @@ function WholeTutorial(props) {
       <hr />
       <div className="subcontainer">
         <div className="row">
-          <div className="col-sm-3">
+          <div className="col-md-12 col-lg-3">
             <p>TeX up the following to move on: &#160;</p>
           </div>
-          <div className="col-sm-3">
+          <div className="col-md-12 col-lg-3">
             <BlockMath math={props.lesson.test} />
           </div>
-          <div className="col-sm-3" />
-          <div className="col-sm-1">
+          <div className="col-md-12 col-lg-3" />
+          <div className="col-md-12 col-lg-1">
             <button
               className="btn btn-outline-dark"
               data-tip={props.lesson.hint}
@@ -49,7 +49,7 @@ function WholeTutorial(props) {
               Hint
             </button>
           </div>
-          <div className="col-sm-1">
+          <div className="col-md-12 col-lg-1">
             <button
               className="btn btn-outline-dark"
               data-tip={props.lesson.test}
@@ -58,7 +58,7 @@ function WholeTutorial(props) {
               Answer
             </button>
           </div>
-          <ReactTooltip place="left" type="dark" effect="solid" />
+          <ReactTooltip place="right" type="dark" effect="solid" />
         </div>
         <TeXCompile prompt=" " lesson={props.lesson} comparable={true} />
       </div>

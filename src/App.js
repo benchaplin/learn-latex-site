@@ -12,14 +12,15 @@ function App(props) {
       <WholeTutorial lesson={lesson} />
     </Route>
   ));
+
   return (
     <div className="general">
       <Header />
       <div className="row">
-        <div className="col-sm-2">
+        <div className="col-md-12 col-lg-2">
           <Nav />
         </div>
-        <div className="col-sm-10">
+        <div className="col-md-12 col-lg-10">
           <Switch>
             <Route path="/" exact>
               <Home isAuthed={true} />

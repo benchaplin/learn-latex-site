@@ -36,6 +36,11 @@ function Nav() {
             </a>
           </li>
           <li>
+            <a className="nav-link" style={{ color: "black" }} href="/logs">
+              Logarithms
+            </a>
+          </li>
+          <li>
             <a className="nav-link" style={{ color: "black" }} href="/sums">
               Sums
             </a>

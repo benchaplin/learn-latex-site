@@ -1,7 +1,6 @@
 import React from "react";
 
 function InputBox(props) {
-
   return (
     <textarea
       className="form-control"
@@ -10,8 +9,7 @@ function InputBox(props) {
       spellCheck="false"
       value={props.text}
       onChange={props.handleChange}
-    >
-    </textarea>
+    ></textarea>
   );
 }
 
