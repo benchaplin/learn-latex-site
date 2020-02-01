@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TexCompile from "./components/TeXCompile";
 
 const homeEx = {
@@ -95,11 +96,9 @@ function Home(props) {
           <TexCompile prompt={homeEx.prompt} test={homeEx.prompt} />
         </div>
       </div>
-      <button className="btn btn-success">
-        <a href="\exps" style={{ color: "white" }}>
-          Begin
-        </a>
-      </button>
+      <Link to="/exps">
+        <button className="btn btn-success">Begin</button>
+      </Link>
     </div>
   );
 }
