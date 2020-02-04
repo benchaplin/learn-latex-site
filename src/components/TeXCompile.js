@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import InputBox from "./InputBox";
 import CompiledBox from "./CompiledBox";
 import { lessonList } from "../lessons/lessons";
 
 function TeXCompile(props) {
-  const [text, setText] = useState(props.prompt);
+  const [text, setText] = useState(
+    props.comparable ? " " : props.lesson.prompt
+  );
   const [completed, setCompleted] = useState(false);
 
   const handleChange = event => {
@@ -44,11 +45,11 @@ function TeXCompile(props) {
       </div>
       <div>
         {completed ? (
-          <Link to={nextPath}>
+          <a href={nextPath}>
             <button onClick={handleNext} className="btn btn-success">
               Next
             </button>
-          </Link>
+          </a>
         ) : (
           <></>
         )}

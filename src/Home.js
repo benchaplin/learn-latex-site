@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import TexCompile from "./components/TeXCompile";
 
 const homeEx = {
@@ -93,12 +92,12 @@ function Home(props) {
       </div>
       <div className="row">
         <div className="col-sm-10">
-          <TexCompile prompt={homeEx.prompt} test={homeEx.prompt} />
+          <TexCompile lesson={homeEx} comparable={false} />
         </div>
       </div>
-      <Link to="/exps">
+      <a href="/exps">
         <button className="btn btn-success">Begin</button>
-      </Link>
+      </a>
     </div>
   );
 }
