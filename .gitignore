@@ -1,5 +1,13 @@
+# dependencies
 /node_modules
-/build
-/.firebase
 
+# build
+/build
+
+# deployment
+/.firebase
+.firebaserc
+firebase.json
+
+# misc
 .DS_Store
