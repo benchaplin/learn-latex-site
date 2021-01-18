@@ -1,6 +1,6 @@
 # Learn LaTeX
 
-[https://learn-latex.web.app](https://learn-latex.site)
+[https://learn-latex.web.app](https://learn-latex.web.app)
 
 Learn LaTeX is a learn-by-example web app for the TeX typesetting language. It consists of a set of lessons and challenges on basic LaTeX commands. 
 
