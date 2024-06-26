@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "./images/latex_logo.png";
 
 function Header() {
   return (
@@ -8,7 +9,7 @@ function Header() {
           <h2>
             Learn
             <img
-              src="https://i.stack.imgur.com/zHFFO.png"
+              src={logo}
               width="110"
               style={{ pointerEvents: "none" }}
               alt="logo"
